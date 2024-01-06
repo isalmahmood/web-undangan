@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.35b72b0b.css",
+    "main.js": "/static/js/main.0ba67cfb.js",
+    "static/js/787.8425ca8b.chunk.js": "/static/js/787.8425ca8b.chunk.js",
+    "static/media/img-plaminan1.jpg": "/static/media/img-plaminan1.677e4cedcf2821496ff6.jpg",
+    "static/media/avatar-pengantin-wanita.jpg": "/static/media/avatar-pengantin-wanita.f7e5c66805e0966e3114.jpg",
+    "static/media/avatar-pengantin-pria.jpg": "/static/media/avatar-pengantin-pria.95c24cb921397c0e96fa.jpg",
+    "static/media/Autumn_in_November.ttf": "/static/media/Autumn_in_November.c5c05948d9b521d79abf.ttf",
+    "static/media/CaviarDreams_Bold.ttf": "/static/media/CaviarDreams_Bold.1062ba91167e0c325786.ttf",
+    "static/media/Olivia-Regular.otf": "/static/media/Olivia-Regular.7bc653bb22fd95834b13.otf",
+    "index.html": "/index.html",
+    "static/media/clock-icon.svg": "/static/media/clock-icon.e628f19fa261ce91d1d4fded27c9e0cb.svg",
+    "static/media/icon-calender-clock.svg": "/static/media/icon-calender-clock.1b6dd6f41e597bd337f6c85e374e464c.svg",
+    "main.35b72b0b.css.map": "/static/css/main.35b72b0b.css.map",
+    "main.0ba67cfb.js.map": "/static/js/main.0ba67cfb.js.map",
+    "787.8425ca8b.chunk.js.map": "/static/js/787.8425ca8b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.35b72b0b.css",
+    "static/js/main.0ba67cfb.js"
+  ]
+}

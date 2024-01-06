@@ -1,3 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Autumn in November";
+  src: url(./assets/fonts/Autumn_in_November.ttf);
+}
+
+@font-face {
+  font-family: "CaviarDreams_Bold";
+  src: url(./assets/fonts/CaviarDreams_Bold.ttf);
+}
+
+@font-face {
+  font-family: "Olivia-Regular";
+  src: url(./assets/fonts/Olivia-Regular.otf);
+}
+
+.font_autumn {
+  font-family: "Autumn in November";
+}
+
+.font_caviar_dreams {
+  font-family: "CaviarDreams_Bold";
+}
+
+.font_olivia_reguler {
+  font-family: "Olivia-Regular";
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +36,15 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: whitesmoke !important;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 1rem;
 }

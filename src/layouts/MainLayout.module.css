@@ -1,0 +1,15 @@
+[aria-describedby="swal2-html-container"] {
+    /* background: blue; */
+    background: url('../assets/img-plaminan1.jpg');
+    background-repeat:no-repeat;
+/* background-size:contain; */
+background-size: cover;
+background-position:center;
+    height: 100vh;
+    width: 100vw;
+    /* margin-left: -10px; */
+}
+
+.swal2-container, .swal2-center {
+    padding: 0rem !important;
+}
