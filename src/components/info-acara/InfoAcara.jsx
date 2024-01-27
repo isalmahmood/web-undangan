@@ -35,7 +35,7 @@ const InfoAcara = () => {
                         </tr>
                         <tr>
                             <td className="p-2 pb-5">10:00 - 11:00 WIB</td>
-                            <td className="p-2 pb-5">Minggu, 03 Maret 2024</td>
+                            <td className="p-2 pb-5">Minggu, 3 Maret 2024</td>
                         </tr>
                         </tbody>
                     </table>
@@ -53,7 +53,7 @@ const InfoAcara = () => {
                         </tr>
                         <tr>
                             <td className="p-2 pb-5">12:00 - Selesai</td>
-                            <td className="p-2 pb-5">Minggu, 03 Maret 2024</td>
+                            <td className="p-2 pb-5">Minggu, 3 Maret 2024</td>
                         </tr>
                         </tbody>
                     </table>

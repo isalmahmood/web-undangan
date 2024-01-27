@@ -21,15 +21,15 @@ const Cover = () => {
         <div className="text-center">
           <div className="text-center">
             <h1 className="text-white text-3xl mb-3">UNDANGAN PERNIKAHAN</h1>
-            <h1 className="text-cyan-200 text-5xl font_autumn"><Typewriter text="Adam" delay={300}/></h1>
-            <h1 className="text-cyan-200 text-5xl font_autumn mt-4">&</h1>
             <h1 className="text-cyan-200 text-5xl font_autumn"><Typewriter text="Zanah" delay={400}/></h1>
+            <h1 className="text-cyan-200 text-5xl font_autumn mt-4">&</h1>
+            <h1 className="text-cyan-200 text-5xl font_autumn"><Typewriter text="Adam" delay={300}/></h1>
           </div>
           <div className="grid justify-items-center items-center my-3">
             <h1 className="text-white">Akan Dilaksanakan Pada Tanggal:</h1>
             <div className="grid grid-flow-col gap-3 text-center auto-cols-max text-white">
             <span className="material-icons text-2xl">calendar_month</span>
-            <span className="text-2xl">23 Maret 2024</span>
+            <span className="text-2xl">3 Maret 2024</span>
             </div>
           </div>
           <div className="grid justify-items-center items-center mx-2 mt-6">

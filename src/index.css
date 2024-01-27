@@ -3,6 +3,11 @@
 @tailwind utilities;
 
 @font-face {
+  font-family: "Font LPMQ Isep Misbah";
+  src: url('assets/fonts/LPMQ-IsepMisbah.ttf');
+}
+
+@font-face {
   font-family: "Autumn in November";
   src: url(./assets/fonts/Autumn_in_November.ttf);
 }
@@ -17,6 +22,11 @@
   src: url(./assets/fonts/Olivia-Regular.otf);
 }
 
+.font_isep_misbah {
+  font-family: "Font LPMQ Isep Misbah";
+  --widgets-spacing: 20px;
+}
+
 .font_autumn {
   font-family: "Autumn in November";
 }
@@ -29,6 +39,11 @@
   font-family: "Olivia-Regular";
 }
 
+.ayat {
+  --widgets-spacing: 20px;
+  line-height:2.2em;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -36,7 +51,13 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: whitesmoke !important;
+  background: #F6FFEE !important;
+  /* background: url('https://img.freepik.com/free-vector/light-gray-seamless-nature-patterned-background-vector_53876-166105.jpg?t=st=1706357199~exp=1706357799~hmac=536ba754d43007cb23f923d741349e03f66f8af7f150bc8283630cd2f6afa0c4');
+    background-repeat:no-repeat; */
+/* background-size:contain; */
+/* background-size: cover;
+background-position:center; */
+  
 }
 
 code {

@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.ae100c8f.css",
-    "main.js": "/static/js/main.ed62b747.js",
+    "main.css": "/static/css/main.2f26d4b9.css",
+    "main.js": "/static/js/main.08499f0d.js",
     "static/js/27.ad9d7ad7.chunk.js": "/static/js/27.ad9d7ad7.chunk.js",
     "static/media/img-plaminan1.jpg": "/static/media/img-plaminan1.677e4cedcf2821496ff6.jpg",
+    "static/media/LPMQ-IsepMisbah.ttf": "/static/media/LPMQ-IsepMisbah.fe9979d34d3f0af9a14c.ttf",
     "static/media/avatar-pengantin-wanita.jpg": "/static/media/avatar-pengantin-wanita.f7e5c66805e0966e3114.jpg",
     "static/media/avatar-pengantin-pria.jpg": "/static/media/avatar-pengantin-pria.95c24cb921397c0e96fa.jpg",
     "static/media/Autumn_in_November.ttf": "/static/media/Autumn_in_November.c5c05948d9b521d79abf.ttf",
@@ -14,7 +15,7 @@
     "static/media/icon-calender-clock.svg": "/static/media/icon-calender-clock.1b6dd6f41e597bd337f6c85e374e464c.svg"
   },
   "entrypoints": [
-    "static/css/main.ae100c8f.css",
-    "static/js/main.ed62b747.js"
+    "static/css/main.2f26d4b9.css",
+    "static/js/main.08499f0d.js"
   ]
 }

@@ -24,7 +24,7 @@ const Gallery = () => {
         </div>
 
 
-        <div className="container mx-auto px-5 py-2 lg:px-32 lg:pt-24 flex items-center">
+        {/* <div className="container mx-auto px-5 py-2 lg:px-32 lg:pt-24 flex items-center">
             <div className="-m-1 flex flex-row sm:flex-wrap md:-m-2">
                 <div className="flex w-full sm:w-1/2 flex-wrap lg:flex-row flex-row-reverse">
                     <div className="w-full lg:w-1/2 p-1 md:p-2">
@@ -42,17 +42,17 @@ const Gallery = () => {
                         className="block h-full w-full rounded-lg 2xl:rounded-2xl object-cover object-center"
                         src="https://www.tailwindtap.com/assets/components/gallery/image2.jpg"
                         />
-                    </div>
+                    </div> */}
                     {/* <div data-aos="flip-right" data-aos-duration="800" data-aos-easing="ease-in-out" data-aos-once="false" data-aos-delay="200"> */}
-                        <div className="w-full p-1 md:p-2">
+                        {/* <div className="w-full p-1 md:p-2">
                             <img data-aos="flip-right" data-aos-duration="800" data-aos-easing="ease-in-out" data-aos-once="false" data-aos-delay="200"
                             alt="gallery"
                             className="block h-full w-full rounded-lg 2xl:rounded-2xl object-cover object-center max-h-none lg:max-h-[1000px]"
                             src="https://www.tailwindtap.com/assets/components/gallery/image7.jpg"
                             />
-                        </div>
+                        </div> */}
                     {/* </div>    */}
-                </div>
+                {/* </div>
                 <div className="flex w-full sm:w-1/2 flex-wrap">
                     <div className="w-full p-1 md:p-2">
                         <img
@@ -78,16 +78,16 @@ const Gallery = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </div> */}
 
-            <div className="w-full max-w-5xl p-5 pb-10 mx-auto mb-10 gap-5 columns-3 space-y-5">
+            {/* <div className="w-full max-w-5xl p-5 pb-10 mx-auto mb-10 gap-5 columns-3 space-y-5">
                 <img src="https://cdn5.vectorstock.com/i/1000x1000/85/59/black-silhouette-couple-in-love-is-sitting-vector-28928559.jpg" alt="image" />
                 <img src="https://cdn5.vectorstock.com/i/1000x1000/85/59/black-silhouette-couple-in-love-is-sitting-vector-28928559.jpg" alt="image" />
                 <img src="https://cdn5.vectorstock.com/i/1000x1000/85/59/black-silhouette-couple-in-love-is-sitting-vector-28928559.jpg" alt="image" />
                 <img src="https://cdn5.vectorstock.com/i/1000x1000/85/59/black-silhouette-couple-in-love-is-sitting-vector-28928559.jpg" alt="image" />
                 <img src="https://cdn5.vectorstock.com/i/1000x1000/85/59/black-silhouette-couple-in-love-is-sitting-vector-28928559.jpg" alt="image" />
                 <img src="https://cdn5.vectorstock.com/i/1000x1000/85/59/black-silhouette-couple-in-love-is-sitting-vector-28928559.jpg" alt="image" />
-            </div>
+            </div> */}
         </section>
         </>
     )

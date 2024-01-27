@@ -73,13 +73,23 @@ const HeroSection = () => {
         <>
         {/* <Swal {...swalProps} /> */}
 <section id="heroSection" className="mt-5">
-        <h1 className="text-5xl text-center font-semibold text-slate-950 font_olivia_reguler">Acara Pernikahan</h1>
+  
+        <img 
+        src="https://hi-undangan-digital.net/wp-content/uploads/2023/07/207-2078653_kaligrafi-bismillah-png-transparent-png-removebg-preview-300x118.png"
+        loading="lazy"
+        className="mx-auto mb-10"
+        style={{ marginTop: "-20px" }}
+        width={200}
+        height={50}
+        />
+
+        <h1 className="text-5xl text-center font-semibold text-slate-950 font_olivia_reguler mb-5">Acara Pernikahan</h1>
         <div className="md:grid md:grid-cols-2 md:gap-2 ">
           <div>
           <div className="grid justify-items-center items-center">
-            <h1 className="text-2xl text-center text-cyan-800 font_autumn mt-2">Adam Arya Soleh, S.Kom</h1>
-            <h1 className="text-2xl text-center text-cyan-800 font_autumn">&</h1>
             <h1 className="text-2xl text-center text-cyan-800 font_autumn">Nurzanah Puspitasari</h1>
+            <h1 className="text-2xl text-center text-cyan-800 font_autumn">&</h1>
+            <h1 className="text-2xl text-center text-cyan-800 font_autumn mt-2">Adam Arya Soleh, S.Kom</h1>
 
             <h1 className="text-slate-950 mt-4">Menuju Resepsi Pernikahan Dalam Waktu:</h1>
             {!acaraSelesai ? 
@@ -127,13 +137,16 @@ const HeroSection = () => {
             
           </div>
           <div className="grid justify-items-center items-center mt-0 mb-8 p-3">
+            <div className="flex flex-col space-y-8">
+          <p className="text-center ayat font-semibold font_isep_misbah text-2xl mb-3 text-slate-950 ">وَمِنْ اٰيٰتِهٖٓ اَنْ خَلَقَ لَكُمْ مِّنْ اَنْفُسِكُمْ اَزْوَاجًا لِّتَسْكُنُوْٓا اِلَيْهَا وَجَعَلَ بَيْنَكُمْ مَّوَدَّةً وَّرَحْمَةً ۗاِنَّ فِيْ ذٰلِكَ لَاٰيٰتٍ لِّقَوْمٍ يَّتَفَكَّرُوْنَ</p>
+            </div>
             <p className="text-justify text-slate-950">
             "Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari 
             jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang. 
             Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir." (QS. Ar Rum ayat 21)
             </p> 
             <h1 className="text-justify mt-5 text-slate-950">
-              Dengan memohon Rahmat dan Ridho Allah SWT kami bermaksud menyelenggarakan acara Pernikahan putra putri kami pada tanggal <b>Minggu, 03 Maret 2024</b>.
+              Dengan memohon Rahmat dan Ridho Allah SWT kami bermaksud menyelenggarakan acara Pernikahan putra putri kami pada tanggal <b>Minggu, 3 Maret 2024</b>.
               Semoga Allah memberkahi putra-putri kami untuk menyempurnakan ibadah mereka dalam membentuk keluarga yang sakinah, mawadah, wa rahmah.
               <br/>Suatu kehormatan dan kebahagiaan
               bagi kami apabila Bapak/lbu/Saudara/i berkenan hadir untuk memberikan do'a restu.

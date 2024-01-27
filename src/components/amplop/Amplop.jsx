@@ -32,7 +32,7 @@ function getRekening2(){
     // Copy the text inside the text field
     navigator.clipboard.writeText(rekening2.value);
 
-    toast.success(`BCA - ${rekening2.value}`, {
+    toast.success(`BSI - ${rekening2.value}`, {
         position: "top-center",
         autoClose: 500,
         hideProgressBar: false,
@@ -58,7 +58,7 @@ function getRekening2(){
                                 <td className="p-2 border-b-2 text-2xl "><img width={100} height={100} className="mx-auto" src="https://w7.pngwing.com/pngs/219/312/png-transparent-bank-rakyat-indonesia-logo-desktop-50-miscellaneous-blue-angle-thumbnail.png" alt="rekening1" /></td>
                             </tr>
                             <tr>
-                                <td className="pt-3">Bank Name - A/N anonymous</td>
+                                <td className="pt-3">Bank BCA - A/N Adam Arya Soleh</td>
                             </tr>
                             <tr>
                                 <td className="p-2 pb-5">
@@ -68,7 +68,7 @@ function getRekening2(){
                                                 type="text"
                                                 id="rekening1"
                                                 className="block text-2xl p-2.5 w-full z-20 text-center text-gray-900 bg-gray-50 rounded-e-lg border-s-gray-50 border-s-0  border-gray-0 focus:ring-blue-0 focus:border-blue-0 dark:border-gray-0 dark:focus:border-blue-0"
-                                                value={'123456789'}
+                                                value={'2740231556'}
                                                 readOnly="readonly"
                                                 disabled
                                             />
@@ -100,7 +100,7 @@ function getRekening2(){
                                 <td className="p-2 border-b-2 text-2xl "><img width={130} height={130} className="mx-auto" src="https://w7.pngwing.com/pngs/561/1/png-transparent-bank-central-asia-logo-bca-finance-business-bank-blue-cdr-text-thumbnail.png" alt="rekening2" /></td>
                             </tr>
                             <tr>
-                                <td className="pt-3">Bank Name - A/N anonymous</td>
+                                <td className="pt-3">Bank BSI - A/N Nurzanah Puspitasari</td>
                             </tr>
                             <tr>
                                 <td className="p-2 pb-5">
@@ -110,7 +110,7 @@ function getRekening2(){
                                                 type="text"
                                                 id="rekening2"
                                                 className="block text-2xl p-2.5 w-full z-20 text-center text-gray-900 bg-gray-50 rounded-e-lg border-s-gray-50 border-s-0  border-gray-0 focus:ring-blue-0 focus:border-blue-0 dark:border-gray-0 dark:focus:border-blue-0"
-                                                value={'987654321'}
+                                                value={'7243600717'}
                                                 readOnly="readonly"
                                                 disabled
                                             />
