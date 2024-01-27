@@ -74,7 +74,7 @@ function getRekening2(){
                                             />
                                                 <label
                                                     htmlFor="rekening1"
-                                                    className="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0]  pt-[0.37rem] leading-[.2] text-slate-400 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none peer-focus:text-primary"
+                                                    className=" text-sm absolute pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0]  pt-[-0.37rem] leading-[.2] text-slate-400 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none peer-focus:text-primary"
                                                 >
                                                     No Rekening
                                                 </label>
@@ -116,7 +116,7 @@ function getRekening2(){
                                             />
                                             <label
                                                     htmlFor="rekening2"
-                                                    className="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] pt-[0.37rem] leading-[.2] text-slate-400 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none peer-focus:text-primary"
+                                                    className="text-sm absolute pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] pt-[-0.37rem] leading-[.2] text-slate-400 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none peer-focus:text-primary"
                                                 >
                                                     No Rekening
                                                 </label>
