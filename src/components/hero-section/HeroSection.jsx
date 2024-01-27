@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 // import Swal from 'react-sweetalert2';
 // import AOS from 'aos';
 import 'aos/dist/aos.css';
+import imgBismillah from "../../assets/images/kaligrafi-bismillah-png-transparent-png-removebg-preview-300x118.png"
 
 const HeroSection = () => {
   const [swalProps, setSwalProps] = useState({});
@@ -75,7 +76,7 @@ const HeroSection = () => {
 <section id="heroSection" className="mt-5">
   
         <img 
-        src="https://hi-undangan-digital.net/wp-content/uploads/2023/07/207-2078653_kaligrafi-bismillah-png-transparent-png-removebg-preview-300x118.png"
+        src={imgBismillah}
         loading="lazy"
         className="mx-auto mb-10"
         style={{ marginTop: "-20px" }}
@@ -137,9 +138,9 @@ const HeroSection = () => {
             
           </div>
           <div className="grid justify-items-center items-center mt-0 mb-8 p-3">
-            <div className="flex flex-col space-y-8">
+            {/* <div className="flex flex-col space-y-8"> */}
           <p className="text-center ayat font-semibold font_isep_misbah text-2xl mb-3 text-slate-950 ">وَمِنْ اٰيٰتِهٖٓ اَنْ خَلَقَ لَكُمْ مِّنْ اَنْفُسِكُمْ اَزْوَاجًا لِّتَسْكُنُوْٓا اِلَيْهَا وَجَعَلَ بَيْنَكُمْ مَّوَدَّةً وَّرَحْمَةً ۗاِنَّ فِيْ ذٰلِكَ لَاٰيٰتٍ لِّقَوْمٍ يَّتَفَكَّرُوْنَ</p>
-            </div>
+            {/* </div> */}
             <p className="text-justify text-slate-950">
             "Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari 
             jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang. 

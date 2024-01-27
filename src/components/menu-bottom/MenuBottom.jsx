@@ -24,7 +24,7 @@ const MenuBottom  = () => {
     </a>
     <a href="#amplop" className="nav__link">
       <i className="material-icons nav__icon">redeem</i>
-      <span className="nav__text">Amplop</span>
+      <span className="nav__text">Gift</span>
     </a>
   </nav>
 

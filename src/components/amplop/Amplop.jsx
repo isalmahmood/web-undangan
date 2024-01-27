@@ -1,6 +1,8 @@
 import React from "react";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import logoBca from "../../assets/images/Bank_Central_Asia.png";
+import logoBsi from "../../assets/images/Bank_Syariah_Indonesia.png";
 
 const Amplop = () => {
 
@@ -12,7 +14,7 @@ function getRekening1(){
     // Copy the text inside the text field
     navigator.clipboard.writeText(rekening1.value);
 
-    toast.success(`BRI - ${rekening1.value}`, {
+    toast.success(`BCA - ${rekening1.value}`, {
         position: "top-center",
         autoClose: 500,
         hideProgressBar: false,
@@ -48,14 +50,16 @@ function getRekening2(){
         <>
         <ToastContainer/>
         <section id="amplop" style={{ marginBottom: "100px" }}>
-        <h1 className="text-5xl text-center font-semibold text-slate-950 font_olivia_reguler mt-10">Amplop</h1>
+        <h1 className="text-5xl text-center font-semibold text-slate-950 font_olivia_reguler mt-10">Gift</h1>
             <div className="md:grid md:grid-cols-2 md:gap-2  mt-5">
                     <div className="grid justify-items-center items-center mt-5">
                         <table className="bg-slate-0 text-slate-900  text-center shadow-xl rounded-2xl w-11/12">
                             <thead></thead>
                             <tbody>
                             <tr className="">
-                                <td className="p-2 border-b-2 text-2xl "><img width={100} height={100} className="mx-auto" src="https://w7.pngwing.com/pngs/219/312/png-transparent-bank-rakyat-indonesia-logo-desktop-50-miscellaneous-blue-angle-thumbnail.png" alt="rekening1" /></td>
+                                <td className="p-2 border-b-2 text-2xl ">
+                                    <img width={100} height={100} className="mx-auto" src={logoBca} alt="rekening1" />
+                                    </td>
                             </tr>
                             <tr>
                                 <td className="pt-3">Bank BCA - A/N Adam Arya Soleh</td>
@@ -97,7 +101,9 @@ function getRekening2(){
                         <thead></thead>
                             <tbody>
                             <tr className="">
-                                <td className="p-2 border-b-2 text-2xl "><img width={130} height={130} className="mx-auto" src="https://w7.pngwing.com/pngs/561/1/png-transparent-bank-central-asia-logo-bca-finance-business-bank-blue-cdr-text-thumbnail.png" alt="rekening2" /></td>
+                                <td className="p-2 border-b-2 text-2xl ">
+                                    <img width={130} height={130} className="mx-auto" src={logoBsi} alt="rekening2" />
+                                    </td>
                             </tr>
                             <tr>
                                 <td className="pt-3">Bank BSI - A/N Nurzanah Puspitasari</td>
