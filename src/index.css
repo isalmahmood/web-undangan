@@ -41,8 +41,11 @@
 
 .ayat {
   --widgets-spacing: 20px;
-  line-height:2.2em;
+  line-height: 2.2em;
 }
+
+
+
 
 body {
   margin: 0;
@@ -51,14 +54,21 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #F6FFEE !important;
-  /* background: url('https://img.freepik.com/free-vector/light-gray-seamless-nature-patterned-background-vector_53876-166105.jpg?t=st=1706357199~exp=1706357799~hmac=536ba754d43007cb23f923d741349e03f66f8af7f150bc8283630cd2f6afa0c4');
-    background-repeat:no-repeat; */
-/* background-size:contain; */
-/* background-size: cover;
-background-position:center; */
-  
+  background: #F6FFEE;
+
+  background: linear-gradient(#ecf2e6d4, #e2eadbb9), url('assets/background-invitation-wedding-templates-abstract-pattern.png');
+  background-repeat: no-repeat;
+  /* background-size:contain; */
+  background-size: cover;
+  background-position: center;
+
+  /* background: linear-gradient(45deg, #e3e2f12f 25%, transparent 21%) , linear-gradient(315deg, #e3e2f10b 25%, transparent 21%), linear-gradient(45deg, #e3e2f153 10%, transparent 11%), linear-gradient(315deg, #e3e2f1 10%, transparent 11%),linear-gradient(135deg, #e3e2f180 25%, transparent 21%) , linear-gradient(225deg, #e3e2f13e 25%, transparent 21%), linear-gradient(135deg, #e3e2f174 10%, transparent 11%), linear-gradient(225deg, #e3e2f174 10%, transparent 11%), radial-gradient(#e3e2f142 20%, transparent 21%);
+        background-size: 3em 3em;
+        background-color: #F6FFEE;
+        opacity: 1 */
+
 }
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

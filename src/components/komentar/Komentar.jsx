@@ -118,53 +118,115 @@ const Komentar = () => {
           })
         
         }
+
+        const generateColor = () => {
+          const CHHAPOLA = Math.floor(Math.random() * 16777215)
+            .toString(16)
+            .padStart(6, '0');
+          return `#${CHHAPOLA}`;
+        };
       
 
     return(
         <>
         {fetchStatus ==false && <Swal {...swalSucces} /> }
         <h1 className="text-5xl text-center font-semibold text-slate-950 font_olivia_reguler mt-10 ">Doa & Restu</h1>
-        <section className="relative  min-h-80 max-h-80 antialiased bg-transparent min-w-screen p-3 overflow-auto">
-            <div className="container px-0 mx-auto sm:px-5">
+        <section className="relative  min-h-80 max-h-80 antialiased bg-white rounded-lg min-w-screen p-3 overflow-auto">
+            <div className="container px-0 mx-auto sm:px-4">
                 {data !== null && fetchStatus == false &&
                 data.sort((a, b) => (b.idUcapan - a.idUcapan)).map((res, index) => {
                     return (
-                    <div key={index} className="flex-col w-full py-4 mx-auto shadow-xl mt-3 bg-sky-100 border-b-2 border-r-2 border-gray-200 sm:px-4 sm:py-4 md:px-4 sm:rounded-lg sm:shadow-sm ">
-                    <div className="flex flex-row md-10">
-                        <div className="flex-col mt-1">
-                        <div className="flex items-center flex-1 px-4 font-bold leading-tight">
-                            {res.Nama} 
-                            <span className="ml-2 text-xs font-normal text-gray-500">
-                            • { moment(res.Tanggal, "DD-MM-YYYY H:m:s").fromNow()}
-                            </span>
+                    <div key={index} className="flex items-center space-x-2 mb-4">
+                      <div className="flex flex-shrink-0 self-start cursor-pointer">
+                        {/* <img
+                          src="https://images.unsplash.com/photo-1551122089-4e3e72477432?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8cnVieXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                          alt=""
+                          className="h-8 w-8 object-fill rounded-full"
+                        /> */} 
+                        <div className="h-9 w-9 rounded-full flex justify-center items-center shadow-xl" style={{backgroundColor:generateColor()}}>
+                          <span className="text-2xl text-white font-bold uppercase">{Array.from(res.Nama)[0]}</span>
                         </div>
-                        <div className="flex-1 px-3 ml-2 text-sm font-medium leading-loose text-gray-600">
+                      </div>
+                      <div className="flex items-center justify-center space-x-2">
+                        <div className="block">
+                          <div className="bg-gray-100 w-auto rounded-xl shadow px-3 pb-3 py-1">
+                            <div className="font-medium">
+                              <span className="hover:underline">
+                                <span className="text-bold text-gray-500">{res.Nama} </span> 
+                                <span className="text-xs font-normal">• { moment(res.Tanggal, "DD-MM-YYYY H:m:s").fromNow()}</span>
+                              </span>
+                            </div>
+                            <div className="text-sm text-black ps-2">
                             {res.Ucapan}
+                            </div>
+                          </div>
                         </div>
+                      </div>
+                    </div>
+                    // <div key={index} className="flex-col w-full py-4 mx-auto shadow-xl mt-3 bg-sky-100 border-b-2 border-r-2 border-gray-200 sm:px-4 sm:py-4 md:px-4 sm:rounded-lg sm:shadow-sm ">
+                    // <div className="flex flex-row md-10">
+                    //     <div className="flex-col mt-1">
+                    //     <div className="flex items-center flex-1 px-4 font-bold leading-tight">
+                    //         {res.Nama} 
+                    //         <span className="ml-2 text-xs font-normal text-gray-500">
+                    //         • { moment(res.Tanggal, "DD-MM-YYYY H:m:s").fromNow()}
+                    //         </span>
+                    //     </div>
+                    //     <div className="flex-1 px-3 ml-2 text-sm font-medium leading-loose text-gray-600">
+                    //         {res.Ucapan}
+                    //     </div>
                         
-                        </div>
-                    </div>
-                    </div>
+                    //     </div>
+                    // </div>
+                    // </div>
                     );
                 })} 
 
-                {data == '' && 
-                   <div className="flex-col w-full py-4 mx-auto shadow-xl mt-3 bg-sky-100 border-b-2 border-r-2 border-gray-200 sm:px-4 sm:py-4 md:px-4 sm:rounded-lg sm:shadow-sm ">
-                   <div className="flex flex-row md-10">
-                       <div className="flex-col mt-1">
-                       <div className="flex items-center flex-1 px-4 font-bold leading-tight">
-                           Teman Kecil
-                           <span className="ml-2 text-xs font-normal text-gray-500">
-                           • 
-                           </span>
+                {data == '' &&
+                     <div className="flex items-center space-x-2 mb-4">
+                     <div className="flex flex-shrink-0 self-start cursor-pointer">
+                       {/* <img
+                         src="https://images.unsplash.com/photo-1551122089-4e3e72477432?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8cnVieXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                         alt=""
+                         className="h-8 w-8 object-fill rounded-full"
+                       />  */}
+                       <div className="h-9 w-9 rounded-full bg-sky-300 flex justify-center items-center shadow-xl">
+                         <span className="text-2xl text-white font-bold uppercase">T</span>
                        </div>
-                       <div className="flex-1 px-3 ml-2 text-sm font-medium leading-loose text-gray-600">
+                     </div>
+                     <div className="flex items-center justify-center space-x-2">
+                       <div className="block">
+                         <div className="bg-gray-100 w-auto rounded-xl shadow px-3 pb-3 py-1">
+                           <div className="font-medium">
+                             <span className="hover:underline">
+                               <span className="text-bold text-gray-500">Teman Kecil </span> 
+                               <span className="text-xs font-normal">• </span>
+                             </span>
+                           </div>
+                           <div className="text-sm text-black ps-2">
                            Sakinah Mawadah wa Rohmah
+                           </div>
+                         </div>
                        </div>
+                     </div>
+                   </div>
+
+                  //  <div className="flex-col w-full py-4 mx-auto shadow-xl mt-3 bg-sky-100 border-b-2 border-r-2 border-gray-200 sm:px-4 sm:py-4 md:px-4 sm:rounded-lg sm:shadow-sm ">
+                  //  <div className="flex flex-row md-10">
+                  //      <div className="flex-col mt-1">
+                  //      <div className="flex items-center flex-1 px-4 font-bold leading-tight">
+                  //          Teman Kecil
+                  //          <span className="ml-2 text-xs font-normal text-gray-500">
+                  //          • 
+                  //          </span>
+                  //      </div>
+                  //      <div className="flex-1 px-3 ml-2 text-sm font-medium leading-loose text-gray-600">
+                  //          Sakinah Mawadah wa Rohmah
+                  //      </div>
                        
-                       </div>
-                   </div>
-                   </div>
+                  //      </div>
+                  //  </div>
+                  //  </div>
                 }
                
             </div>
