@@ -139,7 +139,7 @@ const HeroSection = () => {
           </div>
           <div className="grid justify-items-center items-center mt-0 mb-8 p-3">
             {/* <div className="flex flex-col space-y-8"> */}
-          <p className="text-center ayat font-semibold font_isep_misbah text-2xl mb-3 text-slate-950 ">وَمِنْ اٰيٰتِهٖٓ اَنْ خَلَقَ لَكُمْ مِّنْ اَنْفُسِكُمْ اَزْوَاجًا لِّتَسْكُنُوْٓا اِلَيْهَا وَجَعَلَ بَيْنَكُمْ مَّوَدَّةً وَّرَحْمَةً ۗاِنَّ فِيْ ذٰلِكَ لَاٰيٰتٍ لِّقَوْمٍ يَّتَفَكَّرُوْنَ</p>
+          <p className="text-center tracking-normal ayat font-semibold font_isep_misbah text-2xl mb-3 text-slate-950 ">وَمِنْ اٰيٰتِهٖٓ اَنْ خَلَقَ لَكُمْ مِّنْ اَنْفُسِكُمْ اَزْوَاجًا لِّتَسْكُنُوْٓا اِلَيْهَا وَجَعَلَ بَيْنَكُمْ مَّوَدَّةً وَّرَحْمَةً ۗاِنَّ فِيْ ذٰلِكَ لَاٰيٰتٍ لِّقَوْمٍ يَّتَفَكَّرُوْنَ</p>
             {/* </div> */}
             <p className="text-justify text-slate-950">
             "Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari 

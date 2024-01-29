@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.cbf09873.css",
-    "main.js": "/static/js/main.f2f844fa.js",
+    "main.css": "/static/css/main.69711b1d.css",
+    "main.js": "/static/js/main.accc0dd1.js",
     "static/js/27.ad9d7ad7.chunk.js": "/static/js/27.ad9d7ad7.chunk.js",
     "static/media/Dan_Shay_Justin Bieber-10,000_Hours.mp3": "/static/media/Dan_Shay_Justin Bieber-10,000_Hours.ef75a6ccaebd0e1dfdd2.mp3",
     "static/media/img-plaminan1.jpg": "/static/media/img-plaminan1.677e4cedcf2821496ff6.jpg",
@@ -20,7 +20,7 @@
     "static/media/icon-calender-clock.svg": "/static/media/icon-calender-clock.1b6dd6f41e597bd337f6c85e374e464c.svg"
   },
   "entrypoints": [
-    "static/css/main.cbf09873.css",
-    "static/js/main.f2f844fa.js"
+    "static/css/main.69711b1d.css",
+    "static/js/main.accc0dd1.js"
   ]
 }

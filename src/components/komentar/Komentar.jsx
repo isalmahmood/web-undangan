@@ -2,14 +2,15 @@ import React, { useEffect, useRef, useState } from "react";
 import moment from "moment";
 import axios from "axios";
 import Swal from "react-sweetalert2";
-import localization from 'moment/locale/id'
+import localization from 'moment/locale/id';
+import "./komentarStyle.css";
 
 const Komentar = () => {
     const [key, setkey] = useState('');
     const [swalSucces, setSwalSucces] = useState({});
     // const [getDate, setGetDate] = useState('');
     let interval = useRef();
-    const [data, setData] = useState(null);
+    const [data, setData] = useState([]);
     const [fetchStatus, setFetchStatus] = useState(true);
     const [showForm, setShowForm] = useState(true);
     const [loadingSubmit, setLoadingSubmit] = useState(false);
@@ -25,11 +26,11 @@ const Komentar = () => {
     const fetchData = async () => {
         if (fetchStatus === true) {
             axios
-            .get("https://sheet.best/api/sheets/cfadb6e3-647a-4a9b-9027-22ce70fda2ca")
+            .get("https://script.google.com/macros/s/AKfycbyQchNVnoGC-uYMGT8o0qfFzqmIRezkjIj2RluCrCwNosv8Xr6lVJRrItay7kF36LZ2DQ/exec")
             .then((res) => {
-                setData(res.data);
+                setData(res.data.data);
                 // console.log(res.data.sort((a, b) => (b.Tanggal - a.Tanggal)))
-              
+              // console.log(res.data.data)
             })
             .catch((error) => {
                 console.log(error)
@@ -39,13 +40,10 @@ const Komentar = () => {
     };
 
     useEffect(() => {
-        
         fetchData()
     }, [fetchStatus, setFetchStatus]);
 
-   
-
-    
+    // console.log(data)
     // console.log(sort)
     // setFetchStatus(true)
     
@@ -66,11 +64,12 @@ const Komentar = () => {
     //         clearInterval(interval.current)
     //     }
     // }, [getDate, setGetDate]);
-
+    
+    // moment(Date().toString, 'DD/MM/YYYY HH:mm:ss')
     //submit ucapan
     const [input, setInput] = useState({
-        nama: "",
-        ucapan: ""
+      Nama: "",
+      Ucapan: ""
     })
 
     const handleChangeInput = (e) => {
@@ -84,16 +83,25 @@ const Komentar = () => {
         setLoadingSubmit(true)
         let getTime = moment(Date()).format('DD/MM/YYYY HH:mm:ss')
 
-        let { nama, ucapan} = input 
+        let { Nama, Ucapan} = input;
         
         console.log(input)
-        axios.post("https://sheet.best/api/sheets/cfadb6e3-647a-4a9b-9027-22ce70fda2ca", {
-            Tanggal: getTime,
-            Nama: nama,
-            Ucapan: ucapan,
-          })
+        // axios.post("https://script.google.com/macros/s/AKfycbyQchNVnoGC-uYMGT8o0qfFzqmIRezkjIj2RluCrCwNosv8Xr6lVJRrItay7kF36LZ2DQ/exec", {
+        //     input
+        //   })
+        axios.post('https://script.google.com/macros/s/AKfycbyQchNVnoGC-uYMGT8o0qfFzqmIRezkjIj2RluCrCwNosv8Xr6lVJRrItay7kF36LZ2DQ/exec', 
+          { 
+            Tanggal : getTime, 
+            Nama : Nama, 
+            Ucapan: Ucapan
+          }, 
+          {
+            headers: {
+                'Content-Type': 'multipart/form-data'
+          }
+        })
           .then((response) => {
-            console.log(response);
+            // console.log(response);
             fetchData()
             setFetchStatus(true);
             setSwalSucces({
@@ -116,14 +124,12 @@ const Komentar = () => {
             //   text: "Username atau Password salah!",
             // });
           })
-        
         }
 
+        
         const generateColor = () => {
-          const CHHAPOLA = Math.floor(Math.random() * 16777215)
-            .toString(16)
-            .padStart(6, '0');
-          return `#${CHHAPOLA}`;
+            const randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
+            return randomColor
         };
       
 
@@ -133,10 +139,15 @@ const Komentar = () => {
         <h1 className="text-5xl text-center font-semibold text-slate-950 font_olivia_reguler mt-10 ">Doa & Restu</h1>
         <section className="relative  min-h-80 max-h-80 antialiased bg-white rounded-lg min-w-screen p-3 overflow-auto">
             <div className="container px-0 mx-auto sm:px-4">
-                {data !== null && fetchStatus == false &&
+            {data =='' &&
+              <div className="flex justify-center mt-10">
+                <div className="loader"></div>
+              </div>
+            }
+            {data !== null && fetchStatus == false &&
                 data.sort((a, b) => (b.idUcapan - a.idUcapan)).map((res, index) => {
                     return (
-                    <div key={index} className="flex items-center space-x-2 mb-4">
+                    <div key={index} className="flex items-center space-x-2 mb-3">
                       <div className="flex flex-shrink-0 self-start cursor-pointer">
                         {/* <img
                           src="https://images.unsplash.com/photo-1551122089-4e3e72477432?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8cnVieXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
@@ -152,12 +163,27 @@ const Komentar = () => {
                           <div className="bg-gray-100 w-auto rounded-xl shadow px-3 pb-3 py-1">
                             <div className="font-medium">
                               <span className="hover:underline">
-                                <span className="text-bold text-gray-500">{res.Nama} </span> 
-                                <span className="text-xs font-normal">• { moment(res.Tanggal, "DD-MM-YYYY H:m:s").fromNow()}</span>
+                                <span className="text-bold text-gray-500 border-b-2">{res.Nama} </span> 
+                                {/* <span className="text-xs font-normal">• { moment(res.Tanggal, "DD-MM-YYYY H:m:s").fromNow()}</span> */}
                               </span>
                             </div>
                             <div className="text-sm text-black ps-2">
                             {res.Ucapan}
+                            </div>
+                          </div>
+                          <div className="flex justify-end items-center text-xs w-full">
+                            <div className="font-semibold text-gray-700 px-2 flex items-center justify-center space-x-1 ">
+                              {/* <a href="#" className="hover:underline">
+                                <small>Like</small>
+                              </a>
+                              <small className="self-center">.</small>
+                              <a href="#" className="hover:underline">
+                                <small>Reply</small>
+                              </a> */}
+                              <small className="self-center">• </small>
+                              <span className="hover:underline text-sky-800">
+                                <small>{ moment(res.Tanggal, "DD-MM-YYYY H:m:s").fromNow()}</small>
+                              </span>
                             </div>
                           </div>
                         </div>
@@ -207,6 +233,21 @@ const Komentar = () => {
                            Sakinah Mawadah wa Rohmah
                            </div>
                          </div>
+                         <div className="flex justify-start items-center text-xs w-full">
+                          <div className="font-semibold text-gray-700 px-2 flex items-center justify-center space-x-1">
+                            {/* <a href="#" className="hover:underline">
+                              <small>Like</small>
+                            </a>
+                            <small className="self-center">.</small>
+                            <a href="#" className="hover:underline">
+                              <small>Reply</small>
+                            </a> */}
+                            <small className="self-center">.</small>
+                            <span className="hover:underline text-sky-800">
+                              <small>15 hour</small>
+                            </span>
+                          </div>
+                        </div>
                        </div>
                      </div>
                    </div>
@@ -243,17 +284,17 @@ const Komentar = () => {
                       Ketik ucapan untuk mempelai 
                     </h2>
                     <div className="w-full md:w-full px-3 mb-2 mt-2">
-                      <label htmlFor="nama" className="text-gray-500">Nama</label>
+                      <label htmlFor="Nama" className="text-gray-500">Nama</label>
                       <input 
-                          onChange={handleChangeInput} name="nama" required 
+                          onChange={handleChangeInput} name="Nama" required 
                           className="focus:border-sky-500 shadow bg-white appearance-none border border-gray-400 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="nama" type="text" placeholder="Ketik Nama Anda..." maxLength={20}/>
                       </div>
                     <div className="w-full md:w-full px-3 mb-2 mt-2">
-                    <label htmlFor="ucapan" className="text-gray-500">Ucapan</label>
+                    <label htmlFor="Ucapan" className="text-gray-500">Ucapan</label>
                       <textarea
                         id="komen"
-                        className="focus:border-sky-500 bg-gray-100 text-gray-700 rounded border border-gray-400 leading-normal resize-none w-full h-20 py-2 px-3 font-medium  focus:outline-none focus:bg-white"
-                        name="ucapan"
+                        className="focus:border-sky-500 bg-white text-gray-700 rounded border border-gray-400 leading-normal resize-none w-full h-20 py-2 px-3 font-medium  focus:outline-none focus:bg-white"
+                        name="Ucapan"
                         placeholder="Ketik Ucapan Untuk Mempelai..."
                         required
                         onChange={handleChangeInput}

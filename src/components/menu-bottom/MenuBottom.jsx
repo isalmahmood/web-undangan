@@ -14,7 +14,6 @@ const MenuBottom = () => {
   };
 
   const pauseAudio = () => {
-    console.log("here");
     myRef.current.pause();
     changeAudioStatus(true);
   };
@@ -35,7 +34,7 @@ const MenuBottom = () => {
         <button 
         onClick={pauseAudio}
         className="fixed p-2 right-2 text-white bottom-20 text-center rounded-full drop-shadow-xl">
-        <i className="material-icons text-6xl drop-shadow-lg bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent">stop_circle</i>
+        <i className="material-icons text-6xl drop-shadow-lg bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent">pause_circle</i>
       </button>
         
       ) : (
