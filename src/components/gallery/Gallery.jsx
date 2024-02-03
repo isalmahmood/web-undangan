@@ -3,22 +3,26 @@ import { Link, useParams } from "react-router-dom";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Carousel } from "flowbite-react";
+import img01Mempelai from "../../assets/images/img-01-mempelai.jpeg"
+import img02Mempelai from "../../assets/images/img-02-mempelai.jpeg"
+import img03Mempelai from "../../assets/images/img-03-mempelai.jpeg"
+import img04Mempelai from "../../assets/images/img-04-mempelai.jpeg"
 
 
 const Gallery = () => {
     return(
         <>
         <section id="gallery" className="mt-10">
-        <h1 className="text-5xl text-center font-semibold text-slate-950 font_olivia_reguler mt-10 ">Gallery</h1>
+        <h1 className="text-5xl text-center font-semibold text-slate-950 font_olivia_reguler[hide] mt-10 font_caviar_dreams">Gallery</h1>
 
         <div data-aos="flip-right" data-aos-duration="800" data-aos-easing="ease-in-out" data-aos-once="false" data-aos-delay="200">
-        <div data-aos="fade-down" className="h-96 sm:h-64 xl:h-96 2xl:h-96 md:h-96 md:px-10 mt-5">
-            <Carousel slide={true} className="shadow-xl">
-                <img src="https://flowbite.com/docs/images/carousel/carousel-1.svg" loading="lazy" alt="..." />
-                <img src="https://flowbite.com/docs/images/carousel/carousel-2.svg" loading="lazy" alt="..." />
-                {/* <img src="https://flowbite.com/docs/images/carousel/carousel-3.svg" loading="lazy" alt="..." />
-                <img src="https://flowbite.com/docs/images/carousel/carousel-4.svg" loading="lazy" alt="..." />
-                <img src="https://flowbite.com/docs/images/carousel/carousel-5.svg" loading="lazy" alt="..." /> */}
+        <div data-aos="fade-down" data-aos-once="false" className="h-[500px] sm:h-[400px] xl:h-[500px] 2xl:h-96 md:[500px] md:px-10 mt-5">
+            <Carousel slide={true} className="shadow-2xl ">
+                <img src={img01Mempelai} className="object-cover" loading="lazy" alt="..." />
+                <img src={img02Mempelai} className="object-cover" loading="lazy" alt="..." />
+                <img src={img03Mempelai} className="object-cover" loading="lazy" alt="..." />
+                <img src={img04Mempelai} className="object-cover" loading="lazy" alt="..." />
+                {/* <img src="https://flowbite.com/docs/images/carousel/carousel-5.svg" loading="lazy" alt="..." /> */}
             </Carousel>
         </div>
         </div>

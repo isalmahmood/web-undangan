@@ -84,7 +84,7 @@ const HeroSection = () => {
         height={50}
         />
 
-        <h1 className="text-5xl text-center font-semibold text-slate-950 font_olivia_reguler mb-5">Acara Pernikahan</h1>
+        <h1 className="text-4xl text-center font-semibold text-slate-950 font_caviar_dreams mb-5">Acara Pernikahan</h1>
         <div className="md:grid md:grid-cols-2 md:gap-2 ">
           <div>
           <div className="grid justify-items-center items-center">

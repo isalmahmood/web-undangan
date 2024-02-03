@@ -1,11 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./Menu.css";
-import sound from "../../assets/sounds/Dan_Shay_Justin Bieber-10,000_Hours.mp3";
+import sound from "../../assets/sounds/Tulus_-_Teman_Hidup_Lirik.mp3";
 
 const MenuBottom = () => {
   const [audioStatus, changeAudioStatus] = useState(false);
   const myRef = useRef();
-
 
   const startAudio = () => {
     myRef.current.play();

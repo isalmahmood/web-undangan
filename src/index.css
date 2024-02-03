@@ -48,7 +48,8 @@
 
 .ayat {
   /* --widgets-spacing: 20px; */
-  font-family: "Amiri";
+  font-family: sans-serif;
+  /* font-family: "Font LPMQ Isep Misbah"; */
   line-height: 2.2em;
   letter-spacing: 0em !important;
 }

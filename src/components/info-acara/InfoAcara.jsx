@@ -6,7 +6,7 @@ const InfoAcara = () => {
     return(
         <>
         <section id="lokasi" className="mb-10 p-2" style={{ marginBottom: "100px" }}>
-            <h1 className="text-5xl text-center font-semibold text-slate-950 font_olivia_reguler mt-0">Informasi Acara</h1>
+            <h1 className="text-5xl text-center font-semibold text-slate-950 mt-0 font_olivia_reguler[hide] font_caviar_dreams">Informasi Acara</h1>
             <div className="grid justify-items-center items-center mt-5">
                 <h1 className="text-center text-slate-950">Resepsi dilakasanakan di :</h1>
                 <h1 className="text-center text-slate-950 text-2xl">Jl. Kapitan Rt.14/Rw.04, Klender, Duren Sawit, Jakarta Timur</h1>
