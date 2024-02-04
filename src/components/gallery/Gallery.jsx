@@ -13,10 +13,10 @@ const Gallery = () => {
     return(
         <>
         <section id="gallery" className="mt-10">
-        <h1 className="text-5xl text-center font-semibold text-slate-950 font_olivia_reguler[hide] mt-10 font_caviar_dreams">Gallery</h1>
+        <h1 className="text-4xl text-center font-semibold text-slate-950 font_olivia_reguler[hide] mt-10 font_caviar_dreams">Gallery</h1>
 
-        <div data-aos="flip-right" data-aos-duration="800" data-aos-easing="ease-in-out" data-aos-once="false" data-aos-delay="200">
-        <div data-aos="fade-down" data-aos-once="false" className="h-[500px] sm:h-[400px] xl:h-[500px] 2xl:h-96 md:[500px] md:px-10 mt-5">
+        <div data-aos="flip-right" data-aos-duration="800" data-aos-easing="ease-in-out" data-aos-once="true" data-aos-delay="200">
+        <div data-aos="fade-down" data-aos-once="true" className="h-[500px] sm:h-[400px] xl:h-[500px] 2xl:h-96 md:[500px] md:px-10 mt-5">
             <Carousel slide={true} className="shadow-2xl ">
                 <img src={img01Mempelai} className="object-cover" loading="lazy" alt="..." />
                 <img src={img02Mempelai} className="object-cover" loading="lazy" alt="..." />

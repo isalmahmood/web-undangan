@@ -134,7 +134,7 @@ const Komentar = () => {
     return(
         <>
         {fetchStatus ==false && <Swal {...swalSucces} /> }
-        <h1 className="text-5xl text-center font-semibold text-slate-950 font_olivia_reguler[hide] mt-10 font_caviar_dreams">Doa & Restu</h1>
+        <h1 className="text-4xl text-center font-semibold text-slate-950 font_olivia_reguler[hide] mt-10 font_caviar_dreams">Doa & Restu</h1>
         <section className="relative  min-h-80 max-h-80 antialiased bg-white rounded-lg min-w-screen p-3 overflow-auto">
             <div className="container px-0 mx-auto sm:px-4">
             {data =='' &&
@@ -275,7 +275,7 @@ const Komentar = () => {
           {/* comment form */}
         {showForm &&
           <section className="">
-            <h1 className="text-center mt-10 text-3xl font-semibold text-slate-950 font_olivia_reguler[hide] font_caviar_dreams">Harapan Untuk Mempelai</h1>
+            <h1 className="text-center mt-10 text-2xl font-semibold text-slate-950 font_olivia_reguler[hide] font_caviar_dreams">Harapan Untuk Mempelai</h1>
               <div className="flex mx-auto items-center justify-center mt-2 mx-8 mb-4 max-w-l">
                 <form onSubmit={handleSubmit} className="w-full max-w-11/12 bg-white rounded-lg px-4 pt-2">
                   <div className="flex flex-wrap -mx-3 mb-6">

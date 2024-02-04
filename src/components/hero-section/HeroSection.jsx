@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 // import Swal from 'react-sweetalert2';
 // import AOS from 'aos';
+import Typewriter from "../animation-type/Typewriter";
 import 'aos/dist/aos.css';
 import imgBismillah from "../../assets/images/kaligrafi-bismillah-png-transparent-png-removebg-preview-300x118.png"
 
@@ -139,14 +140,15 @@ const HeroSection = () => {
           </div>
           <div className="grid justify-items-center items-center mt-0 mb-8 p-3">
             {/* <div className="flex flex-col space-y-8"> */}
-          <p className="text-center tracking-normal ayat font-semibold font_isep_misbah text-2xl mb-3 text-slate-950 ">وَمِنْ اٰيٰتِهٖٓ اَنْ خَلَقَ لَكُمْ مِّنْ اَنْفُسِكُمْ اَزْوَاجًا لِّتَسْكُنُوْٓا اِلَيْهَا وَجَعَلَ بَيْنَكُمْ مَّوَدَّةً وَّرَحْمَةً ۗاِنَّ فِيْ ذٰلِكَ لَاٰيٰتٍ لِّقَوْمٍ يَّتَفَكَّرُوْنَ</p>
+            <p className="text-center tracking-normal ayat font-semibold font_isep_misbah text-2xl mb-3 text-slate-950 ">
+            <Typewriter text="وَمِنْ اٰيٰتِهٖٓ اَنْ خَلَقَ لَكُمْ مِّنْ اَنْفُسِكُمْ اَزْوَاجًا لِّتَسْكُنُوْٓا اِلَيْهَا وَجَعَلَ بَيْنَكُمْ مَّوَدَّةً وَّرَحْمَةً ۗاِنَّ فِيْ ذٰلِكَ لَاٰيٰتٍ لِّقَوْمٍ يَّتَفَكَّرُوْنَ" delay={10}/></p>
             {/* </div> */}
-            <p className="text-justify text-slate-950">
+            <p className="text-justify text-slate-950" data-aos-once="true" data-aos="fade-right">
             "Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari 
             jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang. 
             Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir." (QS. Ar Rum ayat 21)
             </p> 
-            <h1 className="text-justify mt-5 text-slate-950">
+            <h1 className="text-justify mt-5 text-slate-950" data-aos-once="true" data-aos="fade-left">
               Dengan memohon Rahmat dan Ridho Allah SWT kami bermaksud menyelenggarakan acara Pernikahan putra putri kami pada tanggal <b>Minggu, 3 Maret 2024</b>.
               Semoga Allah memberkahi putra-putri kami untuk menyempurnakan ibadah mereka dalam membentuk keluarga yang sakinah, mawadah, wa rahmah.
               <br/>Suatu kehormatan dan kebahagiaan

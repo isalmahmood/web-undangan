@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/static/css/main.5b2062aa.css",
-    "main.js": "/static/js/main.869cd3db.js",
+    "main.js": "/static/js/main.43159a81.js",
     "static/js/27.ad9d7ad7.chunk.js": "/static/js/27.ad9d7ad7.chunk.js",
-    "static/media/img-adam.jpg": "/static/media/img-adam.ab601c213f05d2d881ec.jpg",
-    "static/media/img-zanah.jpg": "/static/media/img-zanah.80ef48834f66ccfd5ab0.jpg",
     "static/media/Tulus_-_Teman_Hidup_Lirik.mp3": "/static/media/Tulus_-_Teman_Hidup_Lirik.4789a9e4bfea8802a520.mp3",
+    "static/media/img-adam.jpg": "/static/media/img-adam.a9439a0ae9b38ac6de26.jpg",
+    "static/media/img-zanah.jpg": "/static/media/img-zanah.edcf4fb65bc91b77b418.jpg",
     "static/media/img-plaminan1.jpg": "/static/media/img-plaminan1.677e4cedcf2821496ff6.jpg",
     "static/media/LPMQ-IsepMisbah.ttf": "/static/media/LPMQ-IsepMisbah.fe9979d34d3f0af9a14c.ttf",
     "static/media/Autumn_in_November.ttf": "/static/media/Autumn_in_November.c5c05948d9b521d79abf.ttf",
@@ -25,6 +25,6 @@
   },
   "entrypoints": [
     "static/css/main.5b2062aa.css",
-    "static/js/main.869cd3db.js"
+    "static/js/main.43159a81.js"
   ]
 }

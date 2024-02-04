@@ -50,7 +50,7 @@ function getRekening2(){
         <>
         <ToastContainer/>
         <section id="amplop" style={{ marginBottom: "100px" }}>
-        <h1 className="text-5xl text-center font-semibold text-slate-950 font_olivia_reguler[hide] mt-10 font_caviar_dreams">Gift</h1>
+        <h1 className="text-4xl text-center font-semibold text-slate-950 font_olivia_reguler[hide] mt-10 font_caviar_dreams">Gift</h1>
             <div className="md:grid md:grid-cols-2 md:gap-2  mt-5">
                     <div className="grid justify-items-center items-center mt-5">
                         <table className="bg-slate-0 text-slate-900  text-center shadow-xl rounded-2xl w-11/12">

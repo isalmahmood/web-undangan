@@ -6,7 +6,7 @@ const InfoAcara = () => {
     return(
         <>
         <section id="lokasi" className="mb-10 p-2" style={{ marginBottom: "100px" }}>
-            <h1 className="text-5xl text-center font-semibold text-slate-950 mt-0 font_olivia_reguler[hide] font_caviar_dreams">Informasi Acara</h1>
+            <h1 className="text-4xl text-center font-semibold text-slate-950 mt-0 font_olivia_reguler[hide] font_caviar_dreams">Informasi Acara</h1>
             <div className="grid justify-items-center items-center mt-5">
                 <h1 className="text-center text-slate-950">Resepsi dilakasanakan di :</h1>
                 <h1 className="text-center text-slate-950 text-2xl">Jl. Kapitan Rt.14/Rw.04, Klender, Duren Sawit, Jakarta Timur</h1>
@@ -22,7 +22,12 @@ const InfoAcara = () => {
                 </a>
             </div>
             <div className="md:grid md:grid-cols-2 md:gap-2  mt-5">
-                <div className="grid justify-items-center items-center mt-5">
+                <div className="grid justify-items-center items-center mt-5"
+                 data-aos-offset="100" 
+                 data-aos-duration="1000" 
+                 data-aos-easing="ease-in-out" 
+                 data-aos-once="true"
+                 data-aos="fade-left">
                     <table className="bg-gradient-to-r from-cyan-400 to-blue-400 text-black  text-center shadow-xl rounded-2xl w-11/12">
                         <thead></thead>
                         <tbody>
@@ -40,7 +45,12 @@ const InfoAcara = () => {
                         </tbody>
                     </table>
                 </div>
-                <div className="grid justify-items-center items-center mt-5">
+                <div className="grid justify-items-center items-center mt-5"
+                 data-aos-offset="100" 
+                 data-aos-duration="1000" 
+                 data-aos-easing="ease-in-out" 
+                 data-aos-once="true"
+                 data-aos="fade-right">
                     <table className="bg-gradient-to-r from-cyan-400 to-blue-400 text-black text-center shadow-xl rounded-2xl w-11/12">
                         <thead></thead>
                         <tbody>
