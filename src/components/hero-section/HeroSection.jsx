@@ -74,7 +74,7 @@ const HeroSection = () => {
     return(
         <>
         {/* <Swal {...swalProps} /> */}
-<section id="heroSection" className="mt-5">
+<section id="heroSection" className="mt-5 overflow-hidden">
   
         <img 
         src={imgBismillah}
@@ -151,8 +151,8 @@ const HeroSection = () => {
             <h1 className="text-justify mt-5 text-slate-950" data-aos-once="true" data-aos="fade-left">
               Dengan memohon Rahmat dan Ridho Allah SWT kami bermaksud menyelenggarakan acara Pernikahan putra putri kami pada tanggal <b>Minggu, 3 Maret 2024</b>.
               Semoga Allah memberkahi putra-putri kami untuk menyempurnakan ibadah mereka dalam membentuk keluarga yang sakinah, mawadah, wa rahmah.
-              <br/>Suatu kehormatan dan kebahagiaan
-              bagi kami apabila Bapak/lbu/Saudara/i berkenan hadir untuk memberikan do'a restu.
+              <br/><p className="">Suatu kehormatan dan kebahagiaan
+              bagi kami apabila Bapak/lbu/Saudara/i berkenan hadir untuk memberikan do'a restu.</p>
             </h1>
           </div> 
         </div>

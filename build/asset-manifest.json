@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.5b2062aa.css",
-    "main.js": "/static/js/main.43159a81.js",
+    "main.css": "/static/css/main.0606faeb.css",
+    "main.js": "/static/js/main.8d3d9eb5.js",
     "static/js/27.ad9d7ad7.chunk.js": "/static/js/27.ad9d7ad7.chunk.js",
     "static/media/Tulus_-_Teman_Hidup_Lirik.mp3": "/static/media/Tulus_-_Teman_Hidup_Lirik.4789a9e4bfea8802a520.mp3",
     "static/media/img-adam.jpg": "/static/media/img-adam.a9439a0ae9b38ac6de26.jpg",
@@ -9,14 +9,18 @@
     "static/media/img-plaminan1.jpg": "/static/media/img-plaminan1.677e4cedcf2821496ff6.jpg",
     "static/media/LPMQ-IsepMisbah.ttf": "/static/media/LPMQ-IsepMisbah.fe9979d34d3f0af9a14c.ttf",
     "static/media/Autumn_in_November.ttf": "/static/media/Autumn_in_November.c5c05948d9b521d79abf.ttf",
+    "static/media/adamzanah-4.jpeg": "/static/media/adamzanah-4.0f544d7603b28ba90130.jpeg",
     "static/media/background-invitation-wedding-templates-abstract-pattern.png": "/static/media/background-invitation-wedding-templates-abstract-pattern.e6aef236a056d7866a64.png",
     "static/media/img-04-mempelai.jpeg": "/static/media/img-04-mempelai.5d1c2b537a7651b7a1b1.jpeg",
     "static/media/img-02-mempelai.jpeg": "/static/media/img-02-mempelai.2c1cf03c9cf94c77a393.jpeg",
     "static/media/CaviarDreams_Bold.ttf": "/static/media/CaviarDreams_Bold.1062ba91167e0c325786.ttf",
     "static/media/img-03-mempelai.jpeg": "/static/media/img-03-mempelai.511b634cfd66226dba4e.jpeg",
+    "static/media/adamzanah-2.jpeg": "/static/media/adamzanah-2.ee85c864e176810f666b.jpeg",
     "static/media/img-01-mempelai.jpeg": "/static/media/img-01-mempelai.ea56688a10b69afecde3.jpeg",
+    "static/media/adamzanah-1.jpeg": "/static/media/adamzanah-1.a2640a04f24ad7758276.jpeg",
     "static/media/Olivia-Regular.otf": "/static/media/Olivia-Regular.7bc653bb22fd95834b13.otf",
     "static/media/kaligrafi-bismillah-png-transparent-png-removebg-preview-300x118.png": "/static/media/kaligrafi-bismillah-png-transparent-png-removebg-preview-300x118.22fd5f05d75c35f92a86.png",
+    "static/media/adamzanah-3.jpeg": "/static/media/adamzanah-3.2ac78e5e874db367c726.jpeg",
     "static/media/Bank_Central_Asia.png": "/static/media/Bank_Central_Asia.1c4257db08321f73443a.png",
     "static/media/Bank_Syariah_Indonesia.png": "/static/media/Bank_Syariah_Indonesia.a64273dcefa032fde59a.png",
     "index.html": "/index.html",
@@ -24,7 +28,7 @@
     "static/media/icon-calender-clock.svg": "/static/media/icon-calender-clock.1b6dd6f41e597bd337f6c85e374e464c.svg"
   },
   "entrypoints": [
-    "static/css/main.5b2062aa.css",
-    "static/js/main.43159a81.js"
+    "static/css/main.0606faeb.css",
+    "static/js/main.8d3d9eb5.js"
   ]
 }

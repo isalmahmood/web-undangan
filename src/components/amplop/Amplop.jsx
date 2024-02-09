@@ -71,7 +71,7 @@ function getRekening2(){
                                             <input
                                                 type="text"
                                                 id="rekening1"
-                                                className="block text-2xl p-2.5 w-full z-20 text-center text-gray-900 bg-gray-50 rounded-e-lg border-s-gray-50 border-s-0  border-gray-0 focus:ring-blue-0 focus:border-blue-0 dark:border-gray-0 dark:focus:border-blue-0"
+                                                className="block text-2xl p-2.5 w-full z-20 text-center text-black bg-gray-50 rounded-e-lg border-s-gray-50 border-s-0  border-gray-0 focus:ring-blue-0 focus:border-blue-0 dark:border-gray-0 dark:focus:border-blue-0"
                                                 value={'2740231556'}
                                                 readOnly="readonly"
                                                 disabled
@@ -115,7 +115,7 @@ function getRekening2(){
                                             <input
                                                 type="text"
                                                 id="rekening2"
-                                                className="block text-2xl p-2.5 w-full z-20 text-center text-gray-900 bg-gray-50 rounded-e-lg border-s-gray-50 border-s-0  border-gray-0 focus:ring-blue-0 focus:border-blue-0 dark:border-gray-0 dark:focus:border-blue-0"
+                                                className="block text-2xl p-2.5 w-full z-20 text-center text-black bg-gray-50 rounded-e-lg border-s-gray-50 border-s-0  border-gray-0 focus:ring-blue-0 focus:border-blue-0 dark:border-gray-0 dark:focus:border-blue-0"
                                                 value={'7243600717'}
                                                 readOnly="readonly"
                                                 disabled

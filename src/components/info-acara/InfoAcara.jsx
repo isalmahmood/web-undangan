@@ -21,7 +21,7 @@ const InfoAcara = () => {
                     </button>
                 </a>
             </div>
-            <div className="md:grid md:grid-cols-2 md:gap-2  mt-5">
+            <div className="md:grid md:grid-cols-2 md:gap-2 overflow-hidden mt-5">
                 <div className="grid justify-items-center items-center mt-5"
                  data-aos-offset="100" 
                  data-aos-duration="1000" 
